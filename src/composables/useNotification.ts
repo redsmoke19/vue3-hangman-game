@@ -1,4 +1,4 @@
-import { GameNotification } from "../components/GameNotification"
+import GameNotification from '../components/GameNotification.vue'
 import { ref } from "vue"
 
 export const useNotification = () => {
