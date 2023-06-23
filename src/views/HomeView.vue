@@ -49,7 +49,6 @@ const restart = async () => {
 </script>
 
 <template>
-  {{ letters }}
   <game-header />
   <div class="game-container">
     <game-figure :wrong-letters-count="wrongLetters.length" />
