@@ -34,6 +34,7 @@ window.addEventListener("keydown", ({ key }) => {
   };
   if (letters.value.includes(key)) {
     showNotification();
+    return
   }
   if (/[а-яА-ЯёЁ]/.test(key)) {
     letters.value.push(key.toLowerCase())
@@ -48,6 +49,7 @@ const restart = async () => {
 </script>
 
 <template>
+  {{ letters }}
   <game-header />
   <div class="game-container">
     <game-figure :wrong-letters-count="wrongLetters.length" />
